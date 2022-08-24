@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://kit.fontawesome.com/898a3699ac.js" crossorigin="anonymous"></script>
+    <title>web_page</title>
+</head>
+
+<body>
+    <nav id="navbox">
+        <div id="logo">
+            <img src="static/SharePal_logo.svg" alt="">
+        </div>
+        <div id="midbox">
+            <div id="citySelect">
+                <select id="selectbox">
+                    <option value="0">Bangalore</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Delhi</option>
+                    <option value="3">Gurgaon</option>
+                    <option value="4">Noida</option>
+                    <option value="5">Gaziabad</option>
+                    <option value="6">Hyderabad</option>
+                    <option value="7">Ahemdabad</option>
+                    <option value="8">Pune</option>
+                    <option value="9">Chennai</option>
+                    <option value="10">kolkata</option>
+                    <option value="11">Dehradun</option>
+                    <option value="12">Jaipur</option>
+                    <option value="13">Chandigarh</option>
+                    <option value="14">Surat</option>
+                    <option value="15">Indore</option>
+                    <option value="16">Bhopal</option>
+                    <option value="17">Vizag</option>
+                    <option value="18">Vadodara</option>
+                    <option value="19">Ludhiyana</option>
+                    <option value="20">Faridabad</option>
+                    <option value="21">Meerut</option>
+                    <option value="22">Rajkot</option>
+                    <option value="23">Coimbatore</option>
+                    <option value="24">Jodhpur</option>
+                    <option value="25">Raipur</option>
+                    <option value="26">Lucknow</option>
+                    <option value="27">Guwahati</option>
+                    <option value="28">Mysore</option>
+                    <option value="29">Bhubneswar</option>
+                    <option value="30">Kochi</option>
+                    <option value="31">Mangalore</option>
+                    <option value="32">Trivandrum</option>
+                    <option value="33">Gandinagar</option>
+                    <option value="34">Nagpur</option>
+                    <option value="35">Others</option>
+                </select>
+            </div>
+            <div id="bubbleBox">
+                <div class="bubbles">
+                    <img src="static/trekking.png" alt="">
+                    <div>Trekking</div>
+                </div>
+                <div class="bubbles">
+                    <img src="static/riding.png" alt="">
+                    <div>Riding</div>
+                </div>
+                <div class="bubbles">
+                    <img src="static/go-pro.png" alt="">
+                    <div>Go-pro</div>
+                </div>
+                <div class="bubbles">
+                    <img src="static/dslr.png" alt="">
+                    <div>Dslr</div>
+                </div>
+                <div class="bubbles">
+                    <img src="static/ps4.png" alt="">
+                    <div>Ps4/X-box</div>
+                </div>
+                <div class="bubbles">
+                    <img src="static/games.png" alt="">
+                    <div>Games</div>
+                </div>
+            </div>
+            <div id="order"><i class="fa-solid fa-cart-arrow-down"></i></div>
+        </div>
+        <div id="loginbox">
+            <div id="login">Login/SignUp</div>
+        </div>
+    </nav>
+    <div id="whatsappBtn">
+        <img id="whatsappBtnImg" src="static/whatsapp.png" alt="">
+    </div>
+    <div id="graybg" style="display: none;">
+        <div id="whatsappContactBox" style="display: none;">
+            <div id="whatsappTextBox">
+                <i class="fa-brands fa-whatsapp fa-3x"></i>
+                <div id="whatsappText">
+                    <div>WhatsApp us</div>
+                    <span>We are here to help you with all your queries :)</span>
+                </div>
+            </div>
+            <form action="/contact" method="post" id="whatsappForm">
+                <input type="text" name="name" id="yourName" placeholder="Your Name">
+                <br>
+                <div id="contactNumberBox">
+                    <select id="countryCode">
+                        <option value="91">91</option>
+                        <option value="1">1</option>
+                        <option value="7">7</option>
+                        <option value="20">20</option>
+                        
+                    </select>
+                    <input type="tel" id="number" name="telephone" placeholder="Enter Whatsapp Number">
+                </div>
+                <select name="help" id="help">
+                    <option value="placeholder_option" style="display: none;" placeholder="how can we help">How can
+                        we help?</option>
+                    <option value="newOrder">Need help with New order</option>
+                    <option value="existingOrder">Need Help with Existing order</option>
+                </select>
+                <button id="whatsappSubmitBtn">
+                    <i id="whitecolor" class="fa-brands fa-whatsapp fa-3x"></i>
+                    <span>Whatsapp Us</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="productInfoBox">
+        <div class="productInfo ">
+            <img src="static/thumbsUp.png" alt="">
+            <div>Excellent Quality Products</div>
+        </div>
+        <div class="productInfo borderleft">
+            <img src="static/gift-box.png" alt="">
+            <div>Delivery Date & Return Date is FREE!!</div>
+        </div>
+        <div class="productInfo borderleft">
+            <img src="static/cod.png" alt="">
+            <div>Pay on Delivery</div>
+        </div>
+    </div>
+    <div id="headline">Trekking Gear on rent</div>
+    <div id="container">
+        <div class="itemContainer">
+            <div id="item1" class="items">
+                <div class="itemhead">Trekking Shoes</div>
+                <div class="itemavailbox">
+                    <div class="itemavail">3+ Products</div>
+                </div>
+            </div>
+            <div id="item2" class="items">
+                <div class="itemhead">Trekking Jacket</div>
+                <div class="itemavailbox">
+                    <div class="itemavail">10+ Products</div>
+                </div>
+            </div>
+            <div id="item3" class="items">
+                <div class="itemhead">Backpacks</div>
+                <div class="itemavailbox">
+                    <div class="itemavail">4+ Products</div>
+                </div>
+            </div>
+            <div id="item4" class="items">
+                <div class="itemhead">Trek accessories</div>
+                <div class="itemavailbox">
+                    <div class="itemavail">11+ Products</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="foot1">Traveling via Delhi, Dehradun or Chandigarh?</div>
+        <div id="foot2">Rent while you transit
+            & save even more!</div>
+        <div id="foot3">
+            <span>Save upto 20%</span>
+            <button>Know More</button>
+        </div>
+    </div>
+    <script defer src="static/client.js"></script>
+</body>
+
+</html>

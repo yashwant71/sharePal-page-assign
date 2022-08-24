@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#logo {
+    width: 23vw;
+    /* height: inherit; */
+    cursor: pointer;
+}
+
+#logo img {
+    /* margin-right: 40px; */
+    width: 14vw;
+}
+
+#midbox {
+    display: flex;
+}
+
+#citySelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#citySelect #selectbox {
+    width: 9vw;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#navbox {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 100vw;
+    padding: 6px 0px;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 200;
+}
+
+#bubbleBox {
+    display: flex;
+}
+
+.bubbles {
+    border: 1px solid black;
+    margin: 10px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 2px;
+    cursor: pointer;
+    height: 7vh;
+}
+
+.bubbles:hover {
+    background-color: #0927ea;
+    color: white;
+    /* border: 1px solid blue; */
+}
+
+.bubbles img {
+    width: 30px;
+}
+
+.bubbles div {
+    font-size: 1em;
+    font-weight: bold;
+    width: max-content;
+    padding-left: 3px;
+    padding-right: 4px;
+}
+
+#order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: 1.3em;
+    margin-left: 1vw;
+}
+
+#loginbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#login {
+    padding: 10px 15px;
+    border: 1px solid blue;
+    margin-left: 5vw;
+    border-radius: 5px;
+    color: rgba(0, 0, 255, 0.715);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#whatsappBtn {
+    position: fixed;
+    top: 70vh;
+    right: 0px;
+    width: 70px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#whatsappBtn img {
+    width: inherit;
+}
+
+#graybg {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1001;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whatsappContactBox {
+    top: 15vh;
+    left: 37.5vw;
+    /* margin: auto ; */
+    width: 25vw;
+    height: 68vh;
+    background-color: white;
+    position: fixed;
+    z-index: 1020;
+    opacity: 1;
+    /* padding: 25px; */
+}
+
+#whatsappTextBox{
+    display: flex;
+    width: inherit;
+    padding: 25px;
+    background-color: yellow;
+}
+#whatsappTextBox i{
+
+}
+#whatsappText{
+    margin-left: 2vw;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#whatsappText div{
+    font-weight: bolder;
+}
+
+/* form styling */
+#whatsappForm{
+    padding: 25px;
+}
+#whatsappForm input{
+    padding: 15px;
+    margin: 10px 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#whatsappForm #yourName{
+    width:-webkit-fill-available;
+}
+#countryCode{
+    height: 46px;
+    border-radius: 5px;
+}
+#whatsappForm #number{
+    width: 225px;
+    cursor: pointer;
+}
+#whatsappNumberBox{
+    display: flex;
+}
+#whatsappForm #help{
+    width:-webkit-fill-available;
+    padding: 5px;
+    cursor: pointer;
+}
+#whatsappSubmitBtn{
+    background-color: rgba(18, 131, 115, 0.9);
+    width:-webkit-fill-available;
+    margin-top: 20px;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+#whatsappSubmitBtn span{
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+#whitecolor::before{
+    color: white;
+}
+
+
+#productInfoBox {
+    top: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 95vw;
+    background-color: #d6e5ff;
+    border-radius: 20px;
+    padding: 2vh;
+    margin: auto;
+    margin-top: 19vh;
+    font-weight: bolder;
+
+}
+
+.productInfo {
+    display: flex;
+    padding: 0px 4vw;
+}
+
+.borderleft {
+    border-left: 3px solid black;
+}
+
+.productInfo img {
+    width: 6vw;
+}
+
+.productInfo div {
+    display: flex;
+    align-items: center;
+}
+
+#headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    margin: 2vw;
+    font-weight: bolder;
+}
+
+#container {
+    width: 100vw;
+    /* border: 1px solid red; */
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items {
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 300px;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    background-size: cover;
+    align-self: center;
+    max-width: 360px;
+    min-height: 185px;
+    z-index: 20;
+    height: 185px;
+    box-shadow: 3px 3px 8px gray;
+    flex-grow: 1;
+    overflow: visible;
+    width: auto;
+    margin: 20px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#item1 {
+    background-image: url("first_pic_back.webp");
+}
+
+#item2 {
+    background-image: url("mid_pic_back.webp");
+}
+
+#item3 {
+    background-image: url("last_pic_back.webp");
+}
+
+#item4 {
+    background-image: url("last_last_pic_back.webp");
+}
+
+.itemhead,
+.itemavailbox {
+    margin-left: 1vw;
+}
+
+.itemhead {
+    font-size: 1.6em;
+    font-weight: bolder;
+    max-width: 10vw;
+}
+
+.itemavailbox {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 1vh 1vw;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: rgb(9, 23, 71);
+    color: white;
+}
+
+#footer div {
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 5vh 1vw;
+    max-width: 26vw;
+}
+
+#foot3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#foot3 button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-weight: bolder;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+#foot3 button:hover {
+    background-color: #0927ea;
+    color: white;
+    font-weight: bolder;
+    /* border: 1px solid white; */
+}
