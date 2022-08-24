@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require('express');
 const app = express();
 const params = {}
-
+const mongoose = require("mongoose")
 mongoose
     .connect(process.env.DATABASE, {
         useNewUrlParser: true,
